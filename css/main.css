@@ -1,5 +1,6 @@
 :root {
-    --preto: #000;
+    --vermelho: #e50914;
+    --preto: #141414;
     --branco: #fff;
 }
 
@@ -11,76 +12,219 @@
 
 body {
     background: var(--preto);
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     font-size: 16px;
     color: var(--branco);
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-.sobre {
-    display: flex;
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal - start começa da esquerda para direita */
-    padding: 4%;
-}
-
-.div-foto {
-    width: 100%;
-    margin: 3%;
-}
-
-.foto {
-    width: 100%;
-    border-radius: 25%;
-    min-width: 250px;
-}
-
-.div-infos {
-    width: 80%;
-}
-
-.name {
-    font-size: 35px;
-}
-
-.sub-name {
-    font-size: 18px;
-    color: #808080;
-    margin-bottom: 1rem;
-}
-
-.descricao {
-    width: 100%;
-}
-
-.redes-sociais {
-    font-size: 40px;
+header .row {
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin: 1rem 0px;
+    justify-content: space-between;
 }
 
-.redes-sociais a {
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 50px;
+}
+
+header nav a {
     text-decoration: none;
-    color: var(--branco);
+    color: #aaa;
+    margin-right: 10px;
+    font-weight: 700;
 }
 
-.redes-sociais i:nth-child(1) {
-    margin-right: 20px;
+header nav a:hover {
+    color: #fff;
 }
 
-.redes-sociais a {
-    text-decoration: none;
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) 100%), url('../images/capa-vini.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 2%;
+    margin-bottom: 40px;
+
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .botao {
-    padding: 10px 50px;
-    font-size: 15px;
+    background-color: var(--preto);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
 }
 
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+#cv {
+    background-color: var(--vermelho);
+}
+
+#cv:hover {
+    color: var(--vermelho);
+    background-color: var(--branco);
+    font-weight: 700;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.row {
+    margin-left: 20px;
+}
+
+.filme-principal .row {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes {
+    margin: 5px;
+}
+
+.titulo-skill {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.skills {
+    width: 98%;
+    margin-bottom: 5%;
+}
+
+.skill {
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    margin: 5px 0px;
+    color: var(--branco);
+    margin-top: 10px;
+    background-color: var(--vermelho);
+}
+
+.html {
+    width: 95%; 
+}
+
+.css {
+    width: 70%;
+}
+
+.js {
+    width: 42%;
+}
+
+.ps {
+    width: 97%;
+}
+
+.ai {
+    width: 95%;
+}
+
+.xd {
+    width: 60%;
+}
+
+.pr {
+    width: 50%;
+}
+
+.emm {
+    width: 99%;
+}
+
+.rd {
+    width: 80%;
+}
+
+.rd-crm {
+    width: 67%;
+}
+
+.botao-invertido {
+    width: 100%;
+    background-color: var(--branco);
+    border: none;
+    color: var(--preto);
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+.botao-invertido:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.botao-invertido i {
+    color: var(--preto);
+    float: right;
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    margin-top: 5px;
+}
+
+.w3-center {
+    text-align: center !important; 
+}
+
+.w3-hide {
+    display: none !important;
+}
+
+.w3-show {
+    display: block !important;
+}
+
+.titulo-projetos {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}

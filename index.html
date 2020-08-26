@@ -1,38 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site do Vini</title>
-
-    <!-- Base CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <title>Viniflix</title>
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Responsive CSS-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Owl Carousel 2 CSS-->
+    <link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
 
 </head>
+
 <body>
+    <header>
+        <div class="row">
+            <h2 class="logo">VINIFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Programação</a>
+                <a href="#">Design</a>
+                <a href="#">Marketing</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <div class="sobre">
-            <div class="div-foto">
-                <img class="foto" src="images/foto-vini.jpg" alt="">
-            </div>
-            <div class="infos">
-                <h3 class="name">Vinicius Fernandes Andrade</h3>
-                <p class="sub-name">Designer, fotografo e etc</p>
-                <p class="descricao">
-                    Silvio Santos Ipsum Ma você, topa ou não topamm. É bom ou não éam? Mah você mora com o papai ou com a mamãem? É namoro ou amizadeemm? Ma o Silvio Santos Ipsum é muitoam interesanteam. Com ele ma você vai gerar textuans ha haae. Ma quem quer dinheiroam? Você veio da caravana de ondeammm?<br>
-                    É namoro ou amizadeemm? Estamos em ritmo de festamm. Mah ooooee vem pra cá. Vem pra cá. Vem pra lá, mah você vai pra cá. Agora vai, agora vem pra láamm. É bom ou não éam? Ma você está certo dissoam?
-                </p>
-                <div class="redes-sociais">
-                    <a href="#"><i class="fab fa-github-square" width="50px"></i></a>
-                    <a href="#"><i class="fab fa-linkedin" ></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <button class="botao">Ver projetos</button>
+        <div class="filme-principal">
+            <div class="row">
+                <h3 class="titulo">Esse sou eu <i class="far fa-laugh-wink"></i></h3>
+                <p class="descricao">Com a motivação de gigantes esse jovem luta para atingir seu sucesso em um ambiente
+                    hostil e cheio de desafios.</p>
+                <div class="botoes">
+                    <button role="button" id="cv" class="botao">
+                        <i class="fas fa-file"></i>
+                        Acesse meu CV
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fab fa-linkedin-in"></i>
+                        Meu LinkedIn
+                    </button>
                 </div>
-                
             </div>
         </div>
     </main>
 
+    <div class="row">
+        <div class="skills">
+            <h3 class="titulo-skill">Minhas Skills</h3>
+            <button onclick="accordions('programacao')" class="botao-invertido">Programação <i class="fas fa-plus"></i></button>
+            <div id="programacao" class="w3-hide w3-center">
+                <div class="container">
+                    <div class="skill html">HTML | 95%</div>
+                </div>
+                <div class="container">
+                    <div class="skill css">CSS | 70%</div>
+                </div>
+                <div class="container">
+                    <div class="skill js">JavaScript | 42%</div>
+                </div>
+            </div>
+
+            <button onclick="accordions('design')" class="botao-invertido accordion">Design <i class="fas fa-plus"></i></button>
+            <div id="design" class="w3-hide w3-center">
+                <div class="container">
+                    <div class="skill ps">Photoshop | 97%</div>
+                </div>
+                <div class="container">
+                    <div class="skill ai">Illustator | 95%</div>
+                </div>
+                <div class="container">
+                    <div class="skill xd">Adobe XD | 60%</div>
+                </div>
+                <div class="container">
+                    <div class="skill pr">Adobe Premiere | 50%</div>
+                </div>
+            </div>
+
+            <button onclick="accordions('mkt')" class="botao-invertido accordion">Marketing <i class="fas fa-plus"></i></button>
+            <div id="mkt" class="w3-hide w3-center">
+                <div class="container">
+                    <div class="skill emm">E-mail Marketing | 99%</div>
+                </div>
+                <div class="container">
+                    <div class="skill rd">RD Station Marketing | 80%</div>
+                </div>
+                <div class="container">
+                    <div class="skill rd-crm">RD Station CRM | 67%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 class="titulo-projetos">Programação</h3>
+        <div class="carousel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="images/mini1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 class="titulo-projetos">Design e Marketing</h3>
+        <div class="carousel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="images/mini1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="images/mini10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/77f6bd1ed5.js" crossorigin="anonymous"></script>
+    <script src="js/carousel/jquery.min.js"></script>
+    <script src="js/carousel/owl.carousel.min.js"></script>
+    <script src="js/carousel/setup.js"></script>
+
 </body>
+
 </html>
