@@ -26,7 +26,8 @@ header .row {
 header .logo {
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     font-size: 50px;
 }
 

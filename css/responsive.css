@@ -20,9 +20,3 @@
         margin-top: 2%;
     }
 }
-
-@media screen and (min-width:1000px) {
-    .descrição {
-        width: 50%;
-    }
-}
