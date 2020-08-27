@@ -19,13 +19,4 @@ $('.owl-carousel').owlCarousel({
             items:6
         }
     }
-});
-
-function accordions(id) {
-    var accordion = document.getElementById(id);
-    if (accordion.className.indexOf("w3-show") == -1) {
-      accordion.className += " w3-show";
-    } else { 
-      accordion.className = accordion.className.replace(" w3-show", "");
-    }
-  }
+})

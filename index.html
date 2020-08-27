@@ -103,7 +103,7 @@
         <div class="carousel-filmes">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="images/mini1.jpg" alt="">
+                    <img class="box-filme" onclick="mostraProjeto('teste')" src="images/dino.png" alt="">
                 </div>
                 <div class="item">
                     <img class="box-filme" src="images/mini2.jpg" alt="">
@@ -131,6 +131,24 @@
                 </div>
                 <div class="item">
                     <img class="box-filme" src="images/mini10.jpg" alt="">
+                </div>
+            </div>
+            <!-- Descrição Programação -->
+            <div id="teste" class="w3-hide">
+                <div class="descricao-projeto">
+                    <div>
+                        <img src="images/dino-game.png" width="100%" alt="">
+                    </div>
+                    <div>
+                        <h2 class="titulo">Jogo do Dino sem net</h2>
+                        <p class="descricao">Jogo desenvolvido em aula na Digital Innovation One utilizando HTML, CSS e JavaScript.</p>
+                        <a href="https://github.com/vinituis/dino-game">
+                            <button role="button" class="botao-invertido">
+                                <i class="fab fa-github"></i>
+                                Acesse o projeto
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,6 +196,7 @@
     <script src="js/carousel/jquery.min.js"></script>
     <script src="js/carousel/owl.carousel.min.js"></script>
     <script src="js/carousel/setup.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
