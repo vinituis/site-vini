@@ -20,7 +20,7 @@ body {
 header .row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* space-between volta para a esquerda */
 }
 
 header .logo {
@@ -28,7 +28,7 @@ header .logo {
     color: var(--vermelho);
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 75px; /* Inicialmente era 50px */
 }
 
 header nav a {
