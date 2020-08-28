@@ -238,6 +238,8 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    background-color: var(--vermelho);
+    border-radius: 25px;
 }
 
 .descricao-projeto div .titulo {
@@ -251,11 +253,12 @@ header nav a:hover {
 
 .descricao-projeto div .botao-invertido {
     margin: 3% 25px;
-    width: 50%;
+    width: 90%;
 }
 
 .descricao-projeto div .botao-invertido:hover {
-    background-color: var(--vermelho);
+    background-color: var(--preto);
+    color: var(--vermelho);
 }
 
 .descricao-projeto div a {
@@ -266,10 +269,15 @@ header nav a:hover {
     color: var(--preto);
     float: none;
     margin: 0px 3% 0px 0px;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
+    font-size: 20px;
 }
 
 .descricao-projeto div .botao-invertido:hover i {
-    color: var(--branco);
+    color: var(--vermelho);
+}
+
+.close {
+    font-size: 1.5rem;
+    cursor: pointer;
 }

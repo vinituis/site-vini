@@ -103,13 +103,13 @@
         <div class="carousel-filmes">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" onclick="mostraProjeto('teste')" src="images/dino.png" alt="">
+                    <img class="box-filme" onclick="mostraProjeto('dino-game')" src="images/dino.png" alt="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="images/mini2.jpg" alt="">
+                    <img class="box-filme" onclick="mostraProjeto('lp-insta')" src="images/lp-insta.png" alt="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="images/mini3.jpg" alt="">
+                    <img class="box-filme" onclick="mostraProjeto('netflix')" src="images/netflix.png" alt="">
                 </div>
                 <div class="item">
                     <img class="box-filme" src="images/mini4.jpg" alt="">
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <!-- Descrição Programação -->
-            <div id="teste" class="w3-hide">
+            <div id="dino-game" class="w3-hide">
                 <div class="descricao-projeto">
                     <div>
                         <img src="images/dino-game.png" width="100%" alt="">
@@ -148,9 +148,73 @@
                                 Acesse o projeto
                             </button>
                         </a>
+                        <a href="./projects/dino-game/index.html">
+                            <button role="button" class="botao-invertido">
+                                <i class="fas fa-gamepad"></i>
+                                Jogar agora!
+                            </button>
+                        </a>
                     </div>
+                    <header>
+                        <i onclick="mostraProjeto('dino-game')" class="fas fa-times-circle close"></i>
+                    </header>
                 </div>
             </div>
+
+            <div id="lp-insta" class="w3-hide">
+                <div class="descricao-projeto">
+                    <div>
+                        <img src="images/lp-insta-back.png" width="100%" alt="">
+                    </div>
+                    <div>
+                        <h2 class="titulo">Página do Instagram</h2>
+                        <p class="descricao">Página desenvolvida em aula na Digital Innovation One utilizando HTML e CSS para entender conceitos de flexbox.</p>
+                        <a href="https://github.com/vinituis/instagram-DIO">
+                            <button role="button" class="botao-invertido">
+                                <i class="fab fa-github"></i>
+                                Acesse o projeto
+                            </button>
+                        </a>
+                        <a href="./projects/instagram/index.html">
+                            <button role="button" class="botao-invertido">
+                                <i class="fab fa-instagram"></i>
+                                Veja ao vivo!
+                            </button>
+                        </a>
+                    </div>
+                    <header>
+                        <i onclick="mostraProjeto('lp-insta')" class="fas fa-times-circle close"></i>
+                    </header>
+                </div>
+            </div>
+            
+            <div id="netflix" class="w3-hide">
+                <div class="descricao-projeto">
+                    <div>
+                        <img src="images/netflix-back.png" width="100%" alt="">
+                    </div>
+                    <div>
+                        <h2 class="titulo">Página da NETFLIX</h2>
+                        <p class="descricao">Página desenvolvida em aula na Digital Innovation One utilizando HTML, CSS, JavaScript e jquery para entender conceitos de css e uso frameworks.</p>
+                        <a href="https://github.com/vinituis/Netflix">
+                            <button role="button" class="botao-invertido">
+                                <i class="fab fa-github"></i>
+                                Acesse o projeto
+                            </button>
+                        </a>
+                        <a href="./projects/netflix/index.html">
+                            <button role="button" class="botao-invertido">
+                                <i class="fas fa-play"></i>
+                                Veja ao vivo!
+                            </button>
+                        </a>
+                    </div>
+                    <header>
+                        <i onclick="mostraProjeto('netflix')" class="fas fa-times-circle close"></i>
+                    </header>
+                </div>
+            </div>
+
         </div>
     </div>
 
