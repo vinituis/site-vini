@@ -240,6 +240,7 @@ header nav a:hover {
     flex-direction: row;
     background-color: var(--vermelho);
     border-radius: 25px;
+    margin-top: 25px;
 }
 
 .descricao-projeto div .titulo {

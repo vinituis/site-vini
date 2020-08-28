@@ -38,11 +38,11 @@
                 <p class="descricao">Com a motivação de gigantes esse jovem luta para atingir seu sucesso em um ambiente
                     hostil e cheio de desafios.</p>
                 <div class="botoes">
-                    <button role="button" id="cv" class="botao">
+                    <!--<button role="button" id="cv" class="botao">
                         <i class="fas fa-file"></i>
                         Acesse meu CV
-                    </button>
-                    <button role="button" class="botao">
+                    </button>-->
+                    <button role="button" id="cv" class="botao">
                         <i class="fab fa-linkedin-in"></i>
                         Meu LinkedIn
                     </button>
@@ -110,27 +110,6 @@
                 </div>
                 <div class="item">
                     <img class="box-filme" onclick="mostraProjeto('netflix')" src="images/netflix.png" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini4.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini5.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini6.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini7.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini8.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini9.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini10.jpg" alt="">
                 </div>
             </div>
             <!-- Descrição Programação -->
@@ -223,34 +202,27 @@
         <div class="carousel-filmes">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="images/mini1.jpg" alt="">
+                    <img class="box-filme" onclick="mostraProjeto('alu-app')" src="images/alu.png" alt="">
                 </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini2.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini3.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini4.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini5.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini6.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini7.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini8.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini9.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="images/mini10.jpg" alt="">
+            </div>
+            <div id="alu-app" class="w3-hide">
+                <div class="descricao-projeto">
+                    <div>
+                        <img src="images/alu-back.png" width="100%" alt="">
+                    </div>
+                    <div>
+                        <h2 class="titulo">App Alu</h2>
+                        <p class="descricao">Mockup e identidade desenvolvida em estudos para aprofundar os conhecimentos em experiência do usuário mobile.</p>
+                        <a href="./projects/alu/index.html">
+                            <button role="button" class="botao-invertido">
+                                <i class="fas fa-mobile"></i>
+                                Experimente o mockup!
+                            </button>
+                        </a>
+                    </div>
+                    <header>
+                        <i onclick="mostraProjeto('alu-app')" class="fas fa-times-circle close"></i>
+                    </header>
                 </div>
             </div>
         </div>
